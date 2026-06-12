@@ -1,0 +1,364 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins', sans-serif;
+}
+
+body{
+  background:#f5f5f5;
+}
+
+.dashboard{
+  display:flex;
+}
+
+/* SIDEBAR */
+.sidebar{
+  width:260px;
+  height:100vh;
+  background:white;
+  padding:25px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  border-right:1px solid #eee;
+  position:fixed;
+}
+
+.logo h2{
+  font-size:30px;
+}
+
+.logo p{
+  color:#888;
+  margin-top:5px;
+}
+
+.menu{
+  list-style:none;
+  margin-top:40px;
+}
+
+.menu li{
+  padding:15px;
+  border-radius:14px;
+  margin-bottom:10px;
+  display:flex;
+  align-items:center;
+  gap:15px;
+  cursor:pointer;
+  transition:0.2s;
+}
+
+.menu li:hover{
+  background:#f3f3f3;
+}
+
+.menu li.active{
+  background:#000;
+  border-radius:18px;
+}
+
+.menu li.active a{
+  color:white;
+}
+
+.logout-btn{
+  border:none;
+  background:black;
+  color:white;
+  padding:15px;
+  border-radius:14px;
+  cursor:pointer;
+}
+
+/* MAIN */
+.main{
+  flex:1;
+  margin-left:260px;
+  padding:30px;
+}
+
+/* TOPBAR */
+.topbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.top-left{
+  display:flex;
+  align-items:center;
+  gap:20px;
+}
+
+.menu-btn{
+  font-size:22px;
+}
+
+.top-right{
+  display:flex;
+  align-items:center;
+  gap:20px;
+}
+
+.admin-profile{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.profile-circle{
+  width:45px;
+  height:45px;
+  border-radius:50%;
+  background:#4caf50;
+  color:white;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+/* PAGE HEADER */
+.page-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-top:35px;
+}
+
+.page-header h1{
+  font-size:38px;
+}
+
+.page-header p{
+  color:#777;
+  margin-top:5px;
+}
+
+.add-btn{
+  border:none;
+  background:#4caf50;
+  color:white;
+  padding:15px 22px;
+  border-radius:14px;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-size:15px;
+}
+
+/* CARDS */
+.cards{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:20px;
+  margin-top:30px;
+}
+
+.card{
+  background:white;
+  padding:25px;
+  border-radius:20px;
+  display:flex;
+  align-items:center;
+  gap:18px;
+}
+
+.card-icon{
+  width:60px;
+  height:60px;
+  border-radius:18px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:22px;
+}
+
+.green{
+  background:#eef8ee;
+  color:#4caf50;
+}
+
+.purple{
+  background:#f3ecff;
+  color:#8b5cf6;
+}
+
+.orange{
+  background:#fff5e9;
+  color:#ff9800;
+}
+
+.blue{
+  background:#ebf6ff;
+  color:#2196f3;
+}
+
+.card p{
+  color:#777;
+  font-size:14px;
+}
+
+.card h2{
+  margin:5px 0;
+}
+
+/* FILTER */
+.filter-box{
+  background:white;
+  padding:20px;
+  border-radius:20px;
+  margin-top:30px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.search-box{
+  background:#f5f5f5;
+  padding:14px 18px;
+  border-radius:14px;
+  width:400px;
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.search-box input{
+  border:none;
+  background:none;
+  outline:none;
+  width:100%;
+}
+
+.filter-buttons{
+  display:flex;
+  gap:12px;
+}
+
+.filter-buttons button{
+  border:none;
+  background:#f5f5f5;
+  padding:14px 20px;
+  border-radius:14px;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+/* TABLE */
+.table-box{
+  background:white;
+  margin-top:25px;
+  border-radius:20px;
+  overflow:hidden;
+}
+
+table{
+  width:100%;
+  border-collapse:collapse;
+}
+
+table th{
+  text-align:left;
+  padding:22px;
+  background:#f7faf5;
+  color:#666;
+  font-size:14px;
+}
+
+table td{
+  padding:22px;
+  border-bottom:1px solid #eee;
+  font-size:14px;
+}
+
+/* KATEGORI INFO */
+.kategori-info{
+  display:flex;
+  align-items:center;
+  gap:15px;
+  font-weight:500;
+}
+
+.kategori-icon{
+  width:45px;
+  height:45px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.makanan{
+  background:#fff0db;
+  color:#ff9800;
+}
+
+.minuman{
+  background:#e8f3ff;
+  color:#2196f3;
+}
+
+.snack{
+  background:#f2e9ff;
+  color:#8b5cf6;
+}
+
+/* STATUS */
+.status{
+  padding:7px 14px;
+  border-radius:20px;
+  font-size:12px;
+  font-weight:600;
+}
+
+.aktif{
+  background:#e8f7ec;
+  color:#28a745;
+}
+
+/* ACTION */
+.action-buttons{
+  display:flex;
+  gap:10px;
+}
+
+.action-buttons button{
+  width:38px;
+  height:38px;
+  border:none;
+  border-radius:10px;
+  cursor:pointer;
+}
+
+.edit-btn{
+  background:#eef8ee;
+  color:#28a745;
+}
+
+.delete-btn{
+  background:#ffecec;
+  color:#ef4444;
+}
+
+.more-btn{
+  background:#f5f5f5;
+}
+
+.menu li a{
+  text-decoration:none;
+  color:black;
+  display:flex;
+  align-items:center;
+  gap:15px;
+  width:100%;
+}
+
+.menu li.active a{
+  color:white;
+}

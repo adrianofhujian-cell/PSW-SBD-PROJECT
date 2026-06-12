@@ -1,0 +1,458 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:#f7f8f5;
+}
+
+.dashboard{
+  display:flex;
+}
+
+/* SIDEBAR */
+.sidebar{
+  width:260px;
+  height:100vh;
+  background:#fff;
+  border-right:1px solid #eaeaea;
+  padding:25px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  position:sticky;
+  top:0;
+}
+
+.logo h2{
+  font-size:28px;
+}
+
+.logo p{
+  color:#777;
+  margin-top:5px;
+}
+
+.menu{
+  list-style:none;
+  margin-top:40px;
+}
+
+.menu li{
+  padding:16px 18px;
+  border-radius:14px;
+  margin-bottom:10px;
+  display:flex;
+  align-items:center;
+  gap:15px;
+  cursor:pointer;
+  color:#333;
+}
+
+.menu li.active{
+  background:#edf7e8;
+  color:#2e9f44;
+}
+
+.logout-btn{
+  border:none;
+  background:#fff;
+  padding:15px;
+  border-radius:14px;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  gap:12px;
+  font-size:16px;
+  border:1px solid #eee;
+}
+
+/* MAIN */
+.main{
+  flex:1;
+  padding:30px;
+}
+
+/* TOPBAR */
+.topbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:30px;
+}
+
+.top-left{
+  display:flex;
+  align-items:center;
+  gap:20px;
+}
+
+.top-left i{
+  font-size:24px;
+}
+
+.top-right{
+  display:flex;
+  align-items:center;
+  gap:25px;
+}
+
+.notif{
+  position:relative;
+  font-size:24px;
+}
+
+.notif span{
+  position:absolute;
+  top:-8px;
+  right:-10px;
+  width:18px;
+  height:18px;
+  background:red;
+  color:#fff;
+  border-radius:50%;
+  font-size:11px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.admin-profile{
+  display:flex;
+  align-items:center;
+  gap:15px;
+}
+
+.profile-circle{
+  width:45px;
+  height:45px;
+  border-radius:50%;
+  background:#49b547;
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:600;
+}
+
+/* PAGE HEADER */
+.page-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:30px;
+}
+
+.page-header h1{
+  font-size:42px;
+}
+
+.page-header p{
+  color:#777;
+  margin-top:5px;
+}
+
+.add-btn{
+  border:none;
+  background:#3cab3c;
+  color:#fff;
+  padding:16px 24px;
+  border-radius:12px;
+  cursor:pointer;
+  font-size:15px;
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+/* CARDS */
+.cards{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:20px;
+  margin-bottom:25px;
+}
+
+.card{
+  background:#fff;
+  border:1px solid #eee;
+  border-radius:18px;
+  padding:25px;
+  display:flex;
+  align-items:center;
+  gap:20px;
+}
+
+.card-icon{
+  width:70px;
+  height:70px;
+  border-radius:18px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:30px;
+}
+
+.green{
+  background:#eef9eb;
+  color:#39a845;
+}
+
+.orange{
+  background:#fff7eb;
+  color:#f6a000;
+}
+
+.blue{
+  background:#edf6ff;
+  color:#2196f3;
+}
+
+.purple{
+  background:#f4ecff;
+  color:#7b4df5;
+}
+
+.red{
+  background:#ffeff1;
+  color:#ff3b30;
+}
+
+.card h2{
+  font-size:42px;
+}
+
+.card span{
+  font-size:14px;
+}
+
+.orange-text{
+  color:#f6a000;
+}
+
+.blue-text{
+  color:#2196f3;
+}
+
+.green-text{
+  color:#39a845;
+}
+
+.red-text{
+  color:#ff3b30;
+}
+
+/* FILTER */
+.filter-box{
+  background:#fff;
+  border:1px solid #eee;
+  border-radius:18px 18px 0 0;
+  padding:20px;
+  display:flex;
+  gap:15px;
+  align-items:center;
+}
+
+.search-box{
+  flex:1;
+  display:flex;
+  align-items:center;
+  gap:12px;
+  border:1px solid #e5e5e5;
+  border-radius:12px;
+  padding:14px 18px;
+}
+
+.search-box input{
+  border:none;
+  outline:none;
+  width:100%;
+  font-size:15px;
+}
+
+.filter-box select{
+  border:1px solid #e5e5e5;
+  border-radius:12px;
+  padding:14px 18px;
+  font-size:15px;
+  background:#fff;
+}
+
+.filter-btn,
+.reset-btn{
+  border:1px solid #e5e5e5;
+  background:#fff;
+  padding:14px 22px;
+  border-radius:12px;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-size:15px;
+}
+
+/* TABLE */
+.table-container{
+  background:#fff;
+  border:1px solid #eee;
+  border-top:none;
+  border-radius:0 0 18px 18px;
+  overflow:hidden;
+}
+
+table{
+  width:100%;
+  border-collapse:collapse;
+}
+
+table th{
+  background:#f4f8f1;
+  padding:20px;
+  text-align:left;
+  font-size:15px;
+}
+
+table td{
+  padding:20px;
+  border-bottom:1px solid #f1f1f1;
+  font-size:15px;
+}
+
+.customer{
+  display:flex;
+  align-items:center;
+  gap:15px;
+}
+
+.customer p{
+  color:#777;
+  margin-top:4px;
+}
+
+.avatar{
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:600;
+  font-size:20px;
+}
+
+.green-bg{
+  background:#dff5d8;
+}
+
+.purple-bg{
+  background:#edd8ff;
+}
+
+.orange-bg{
+  background:#ffe2cf;
+}
+
+/* STATUS */
+.status{
+  padding:8px 16px;
+  border-radius:20px;
+  font-size:13px;
+  font-weight:500;
+}
+
+.waiting{
+  background:#fff3d6;
+  color:#e69a00;
+}
+
+.process{
+  background:#e6f2ff;
+  color:#2196f3;
+}
+
+.success{
+  background:#e5f5e5;
+  color:#2e9f44;
+}
+
+.cancel{
+  background:#ffe5e8;
+  color:#ff3b30;
+}
+
+/* ACTION */
+.action-btns{
+  display:flex;
+  gap:10px;
+}
+
+.action-btns button{
+  width:42px;
+  height:42px;
+  border:none;
+  border-radius:12px;
+  cursor:pointer;
+  font-size:15px;
+}
+
+.view{
+  background:#eef9eb;
+  color:#2e9f44;
+}
+
+.edit{
+  background:#f2f0ff;
+  color:#5b6cff;
+}
+
+.more{
+  background:#fff;
+  border:1px solid #eee !important;
+}
+
+/* PAGINATION */
+.pagination{
+  padding:25px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.pagination p{
+  color:#777;
+}
+
+.page-btns{
+  display:flex;
+  gap:10px;
+}
+
+.page-btns button{
+  width:42px;
+  height:42px;
+  border:1px solid #eee;
+  background:#fff;
+  border-radius:10px;
+  cursor:pointer;
+}
+
+.active-page{
+  background:#39a845 !important;
+  color:#fff;
+}
+
+.menu li a{
+  text-decoration:none;
+  color:#333;
+  display:flex;
+  align-items:center;
+  gap:15px;
+  width:100%;
+}
+
+.menu li.active a{
+  color:#2e9f44;
+}
